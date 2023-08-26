@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown" id="services-dropdown">
+                <a href="#">Services &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+    const servicesDropdown = document.getElementById("services-dropdown");
+    const servicesMenu = servicesDropdown.querySelector(".dropdown-menu");
+    const contactLink = document.querySelector(".menu li:last-child");
+
+    servicesDropdown.addEventListener("click", function(event) {
+        if (window.innerWidth <= 768) {
+            event.preventDefault();
+            servicesMenu.classList.toggle("active");
+            if (servicesMenu.classList.contains("active")) {
+                contactLink.style.marginTop = servicesMenu.clientHeight + "px";
+            } else {
+                contactLink.style.marginTop = "0";
+            }
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     height: 130px;
+    border: 1px solid green;
     align-items: center;
   }
   .navbar .main-menu {
@@ -82,14 +83,11 @@
     text-align: center;
     line-height: 1.6;
   }
-
+.main-menu{
+  position: relative;
+  right: 20px;
+}
   /*NAVBAR FOR MOBILEE*/
-  /*tablet size*/
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
- 
-  }
-  
-  
 
   @media screen and (max-width: 768px) {
     .main-menu {
@@ -214,15 +212,12 @@
     left: -120px; /* Push the dropdown to the left */
     margin-top: 20px; /* Adjust the margin-top value as needed */
 
-
   }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--grey);
   }
 
-
-   
    }
    
     /* DEFAULT DROPDOWN STYLING */
@@ -263,7 +258,6 @@
     text-decoration: none;
     display: block;
     font-size: 14px;
-  
     
   }
   
@@ -272,7 +266,6 @@
     border-bottom: 1px solid white;
     color: var(--white);
   }
-  
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
@@ -351,6 +344,19 @@
 }
 
 /*ABOUT US*/
+.learn-more{
+  margin: 20px;
+  color: var(--white);
+  background-color: var(--blue);
+  width: 120px;
+  height: 40px;
+  border: 2px solid var(--white);
+  font-weight: 570;
+}
+.learn-more:hover{
+  color: var(--blue);
+  background-color: var(--white);
+}
 .about-us{
  background-color: var(--blue);
  display: grid;
@@ -364,7 +370,7 @@
   padding: 50px;
   margin-bottom: 10px;
   min-height: fit-content;
-  line-height: 20px;
+  line-height: 25px;
   font-size: 22px;
 }
 .about-text h3{
@@ -442,6 +448,11 @@ padding: 3px;
   border-radius: 10px;
   width: 100px;
   height: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+.resc-expl:hover {
+  cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  filter: saturate(0.8); /* Reduce saturation */
 }
 /*PARTNERS SECTION*/
 .partners-section{
@@ -463,12 +474,28 @@ padding: 3px;
   gap: 70px;
 }
 .partners-logos img{
-width:100%;
-height: 140px;
 background-color: transparent;
-
 }
-
+.chai-img{
+  width:120px;
+  height:66px;
+}
+.unicef-img{
+  width:120px;
+  height:90px;
+}
+.moh-img{
+  width:120px;
+  height:26px;
+}
+.nexleaf-img{
+  width:120px;
+  height:54px;
+}
+.jkuat-img{
+  width:110px;
+  height:119px;
+}
 /*FOOTER STYLE*/
 .flex-footer{
   display: grid;
@@ -491,11 +518,13 @@ footer a{
   color:var(--white);
   font-weight: 250;
 }
+
 .nav-links,.resource-links{
   display: flex;
   flex-direction: column;
   padding: 4px;
   line-height: 24px;
+  font-weight: bolder;
 }
 .socials{
   min-width: 390px;
@@ -523,9 +552,23 @@ footer h6{
   overflow: hidden;
 }
 
+.back-top:hover{
+  cursor: pointer;
+  filter: saturate(0.6);
+}
+svg{
+  cursor: pointer;
+
+}
 
 
 /*MEDIA QUERIES*/
+@media (max-width: 380px) {
+.about-text{
+  border: 1px solid orangered;
+ min-height: 580px;
+}
+}
 
 @media (max-width: 480px) {
 .main-container{
@@ -546,7 +589,6 @@ height: 99px;
   color: var(--white);
 }
 
-
 .about-us {
 display: flex;
 flex-direction: column;
@@ -556,18 +598,15 @@ line-height: 20px;
 
 .about-text {
 padding: 40px;
-margin-bottom: 65px;
+margin-bottom: 10px;
 }
-
 .about-image {
   position: relative;
   bottom: 20px;
 }
-
 .about-image img {
 max-width: 100%;
 max-height: 100%;
-
 }
 .resources{
 flex-direction: column;
@@ -586,13 +625,13 @@ width: 100%;
   padding: 10px;
 }
 
-.top{
-  position: relative;
-  left: 40px;
-}
+
+
 
 .top h4:hover {
   border-bottom: 1px solid white;
+  filter: saturate(0.8);
+cursor: pointer;
 }
 .socials {
   min-width: auto;
@@ -676,5 +715,8 @@ header {
 .resources{
   flex-direction: column;
 }
-
+.about-text{
+  border: 1px solid pink;
+  min-height: 750px;
+}
 }

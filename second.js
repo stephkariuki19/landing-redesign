@@ -55,7 +55,7 @@ setInterval(function () {
 
 //STYLING FOR NAVIGATION
 // Add an event listener to the "Back to the top" link
-document.querySelector('.top').addEventListener('click', () => {
+document.querySelector('.back-top').addEventListener('click', () => {
   // Scroll back to the top of the page
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });

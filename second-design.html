@@ -35,6 +35,7 @@
                     <a href="https://smartlearning.jkuat.ac.ke/">Smart Learning</a>
                     <a href="http://kenvip-home.jkuat.ac.ke:8000/?page_id=223">Data Repository</a>
                     <a href="http://kenvip-home.jkuat.ac.ke:8000/?page_id=22">Indicator Dashboards</a>
+                    <a href="#">Operational Dashboards</a>
                   </div>
                 </div>
                 <a class="ham-link" href="#">FAQs</a>
@@ -49,57 +50,42 @@
             <h4 class="title-text">Kenya National Vaccination and Immunization Program</h4>
         </section>
 
-        
-    <!--image slider start-->
-    <div class="slider" >
-        <div class="slides" >
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
+        <!--SLIDESHOW-->
+
+        <div class="slideshow">
+          <div class="slide">
             <img src="http://kenvip-home.jkuat.ac.ke:8000/wp-content/uploads/2023/08/woman-in-lab-scaled.jpg" alt="">
-            <p class="woman-desc">Renal unit Histocompatibility and immunogenetics laboratory</p>
           </div>
-          <div class="slide second">
+          <div class="slide">
             <img src="http://kenvip-home.jkuat.ac.ke:8000/wp-content/uploads/2023/08/people-in-lab-scaled.jpg" alt="">
-            <p class="people-desc">Renal unit Histocompatibility and immunogenetics laboratory</p>
           </div>
-          <div class="slide  third">
+          <div class="slide">
             <img src="http://kenvip-home.jkuat.ac.ke:8000/wp-content/uploads/2023/08/child-immunized.jpg" alt="">
-            <p class="child-desc">Malaria child vaccination in the  Kenya Lake Region</p>
+          </div>
+          <div class="slide">
+            <img src="http://kenvip-home.jkuat.ac.ke:8000/wp-content/uploads/2023/08/man-lab.jpg" alt="">
+          </div>
+          <div class="buttons">
+            <div>
+              <svg  onclick="changeSlide(-1) " class ="slider-icon-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-left-circle-outline</title><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M15.4,16.6L10.8,12L15.4,7.4L14,6L8,12L14,18L15.4,16.6Z" /></svg>
+
+            </div>
+            <div>
+              <svg  onclick="changeSlide(1) " class="slider-icon-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-right-circle-outline</title><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M8.6,16.6L13.2,12L8.6,7.4L10,6L16,12L10,18L8.6,16.6Z" /></svg>
+
+            </div>
 
           </div>
-          <div class="slide fourth"  >
-            <img src="http://kenvip-home.jkuat.ac.ke:8000/wp-content/uploads/2023/08/man-lab.jpg" alt="">
-            <p class="man-desc">Testing food security at National Public Health Laboratories </p>
+          <div class="progress-nav">
+            <span onclick="showSlide(0) "  class="active progress-nav"></span>
+            <span onclick="showSlide(1) "  class="progress-nav"></span>
+            <span  onclick="showSlide(2) "  class="progress-nav"></span>
+            <span  onclick="showSlide(3) " class="progress-nav"></span>
           </div>
-          
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            
-          </div>
-          <!--automatic navigation end-->
         </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-      </div>
-      <!--image slider end-->
-  
+        
+    
+  <!--RESOURCES-->
         <div class="resource-container" >
             <h4>RESOURCES WE OFFER</h4>
         <section class="resources">
@@ -123,6 +109,16 @@
                 <h5>Indicator Dashboards</h5>
                 <p>
                   Utilize visualization tools to examine extensive vaccination trends, monitor real-time coverage rates, detect geographical discrepancies, and precisely locate zones requiring focused interventions.
+                </p>
+                <a href="http://kenvip-home.jkuat.ac.ke:8000/?page_id=22">
+                  <button class="resc-expl">EXPLORE</button>
+                </a>
+              </div>
+
+              <div class="opo-dashboards">
+                <h5>Operational Dashboards</h5>
+                <p>
+                  Use extra visualization tools to analyze vaccination trends, track coverage rates, identify geographic disparities, and locate areas for targeted interventions.
                 </p>
                 <a href="http://kenvip-home.jkuat.ac.ke:8000/?page_id=22">
                   <button class="resc-expl">EXPLORE</button>

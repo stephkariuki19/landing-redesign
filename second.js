@@ -60,14 +60,32 @@ document.querySelector('.back-top').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-//NA 
-/*
- <div class="slideshow-buttons">
-            <div>
-              <svg  onclick="changeSlide(-1) " class ="slider-icon-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-left-circle-outline</title><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M15.4,16.6L10.8,12L15.4,7.4L14,6L8,12L14,18L15.4,16.6Z" /></svg>
-            </div>
+//NEWS 
+fetch('https://www.africa-newsroom.com/africarc/rss/Tzo4OiJzdGRDbGFzcyI6Mzp7czo5OiJsYW5ndWFnZXMiO3M6MTk6ImE6MTp7aTowO3M6MjoiZW4iO30iO3M6NDoidGFncyI7YToxOntpOjA7YToyOntzOjY6InRhZ19pZCI7czozOiIxMzMiO3M6NToidGFnX2MiO3M6MzoiNjAxIjt9fXM6NDoidHlwZSI7czoxOiJyIjt9')
+    .then(response => response.text())
+    .then(data => {
+        // Parse the XML data
+        console.log('rss data')
+        console.log(data)
+    })
+    .catch(error => {
+        console.error('Error fetching RSS feed:', error);
+    });
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(data, 'text/xml');
+    const items = xmlDoc.querySelectorAll('item'); // Get all the <item> elements
+    const container = document.getElementById('rss-container'); // Assuming you have a container element
+items.forEach(item => {
+    const title = item.querySelector('title').textContent;
+    const link = item.querySelector('link').textContent;
+    const description = item.querySelector('description').textContent;
+    const pubDate = item.querySelector('pubDate').textContent;
 
-            <div>
-              <svg  onclick="changeSlide(1) " class="slider-icon-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-right-circle-outline</title><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M8.6,16.6L13.2,12L8.6,7.4L10,6L16,12L10,18L8.6,16.6Z" /></svg>
-            </div>
-* */
+    const article = document.createElement('article');
+    article.innerHTML = `
+        <h2><a href="${link}" target="_blank">${title}</a></h2>
+        <p>${description}</p>
+        <p>${pubDate}</p>
+    `;
+    container.appendChild(article);
+});

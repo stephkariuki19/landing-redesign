@@ -369,9 +369,10 @@
 .about-text{
   padding: 50px;
   margin-bottom: 10px;
-  min-height: fit-content;
+  min-height: 420px;
   line-height: 25px;
   font-size: 22px;
+  border: 1px solid red;
 }
 .about-text h3{
   font-size: 30px;
@@ -485,8 +486,8 @@ background-color: transparent;
   height:90px;
 }
 .moh-img{
-  width:120px;
-  height:26px;
+  width:150px;
+  height:33px;
 }
 .nexleaf-img{
   width:120px;
@@ -555,13 +556,35 @@ footer h6{
 .back-top:hover{
   cursor: pointer;
   filter: saturate(0.6);
+  background-color: var(--white);
+  color: var(--blue);
+  
 }
+
 svg{
   cursor: pointer;
-
 }
-
-
+/*THE TWEETS PAGE*/
+.scrollable-div {
+  width:60vw; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  overflow: auto; /* Enable scrolling */
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.parent-scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid greenyellow;
+  background-color: var(--grey);
+  padding: 20px;
+}
+.parent-scroll h5{
+  color: var(--blue);
+  font-size: 20px;
+}
 /*MEDIA QUERIES*/
 @media (max-width: 380px) {
 .about-text{
@@ -574,6 +597,12 @@ svg{
 .main-container{
   overflow: scroll;
 }
+.scrollable-div {
+  width:80vw;
+  padding: 0px;
+
+}
+
 header{
 font-size: 14px;
 display: block;
@@ -625,9 +654,6 @@ width: 100%;
   padding: 10px;
 }
 
-
-
-
 .top h4:hover {
   border-bottom: 1px solid white;
   filter: saturate(0.8);
@@ -641,6 +667,7 @@ cursor: pointer;
   padding: 10px;
  position: relative;
  left: 20px;
+ border: 1px solid red;
 }
 
 .socials svg {
@@ -682,7 +709,7 @@ footer h6 {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-menu{
     border: 1px solid orange ;
-    transform: translateX(-650px);
+    transform: translateX(-1250px);
 
   }
 .main-container {

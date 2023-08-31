@@ -1,3 +1,4 @@
+<br><br>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +22,7 @@
               </a> 
               </div>
               <div class="main-menu">
-                <a class="ham-link" href="#">Home</a>
+                <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/">Home</a>
                 <a class="ham-link" href="#">About Us</a>
                 <div class="dropdown">
                   <a  class="ham-link"class="dropbtn" href="#">Services
@@ -31,13 +32,13 @@
                     </svg>
                   </a>
                   <div class="dropdown-content">
-                    <a href="https://smartlearning.jkuat.ac.ke/">Smart Learning</a>
+                    <a href="http://kenvipsmartlearning.jkuat.ac.ke/">Smart Learning</a>
                     <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">Data Repository</a>
                     <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Indicator Dashboards</a>
-                    <a href="#">Operational Dashboards</a>
+                    <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">Operational Dashboards</a>
                   </div>
                 </div>
-                <a class="ham-link" href="#">FAQs</a>
+                <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=3689">FAQs</a>
                 <a class="ham-link" href="#">Contact Us</a>
               </div>
             </nav>
@@ -91,15 +92,17 @@
             <div class="smart-learning">
                 <h5>Smart Learning</h5>
                 <p>
-                  Introducing a web-based platform for comprehensive immunization training in Kenya for healthcare pros and stakeholders.
+                                   Introducing a web-based platform for comprehensive immunization training in Kenya for healthcare pros and stakeholders.
+
                 </p>
-                <a href="https://smartlearning.jkuat.ac.ke/">
+                <a href="http://kenvipsmartlearning.jkuat.ac.ke/">
                   <button class="resc-expl">EXPLORE</button>      </a>        </div>
 
              <div class="data-repo">
                 <h5>Data Repository</h5>
                 <p>
-                  Gain crucial information regarding vaccination coverage, schedules, distribution, and epidemiological data, all  through a centralized hub.
+                                    Gain crucial information regarding vaccination coverage, schedules, distribution, and epidemiological data, all  through a centralized hub.
+
                 </p>
                 <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">
                   <button class="resc-expl">EXPLORE</button>       </a>       </div>
@@ -107,7 +110,8 @@
              <div class="dashboards">
                 <h5>Indicator Dashboards</h5>
                 <p>
-                  Use visualization to analyze vaccination trends, track real-time coverage, identify gaps, and target interventions accurately
+                                  Use visualization to be able to analyze vaccination trends, track real-time coverage, identify gaps, and target interventions accurately.
+  
                 </p>
                 <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">
                   <button class="resc-expl">EXPLORE</button>
@@ -117,9 +121,10 @@
               <div class="opo-dashboards">
                 <h5>Operational Dashboards</h5>
                 <p>
-                  Employ  visualizations to analyze vaccination trends, track coverage, and  find geographic disparities for targeted actions.
+                                Employ  visualizations to analyze vaccination trends, track coverage, and  find geographic disparities for targeted actions.
+    
                 </p>
-                <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">
+                <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">
                   <button class="resc-expl">EXPLORE</button>
                 </a>
               </div>
@@ -183,16 +188,17 @@
         <div class="flex-footer">
 
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="https://kenvip-home.jkuat.ac.ke/">Home</a>
             <a href="#">About Us</a>
-            <a href="#">FAQs</a>
+            <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3689">FAQs</a>
             <a href="#">Contact Us</a>
         </div>
 
         <div class="resource-links">
-            <a href="https://smartlearning.jkuat.ac.ke/">Smart Learning</a>
+            <a href="http://kenvipsmartlearning.jkuat.ac.ke/">Smart Learning</a>
             <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">Data Repositories</a>
-            <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Dashboards</a>
+            <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Indicator Dashboards</a>
+            <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">Operational Dashboards</a>
         </div>
 
         <div class="socials">
@@ -227,6 +233,15 @@
   box-sizing: border-box;
   margin: 0px;
   font-family: 'Lexend', sans-serif;
+}
+ /* Apply a CSS reset */
+html, body, div, span,section, h1, h2,h4,h5, h3, p, a, img, etc. {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /*NEW NAVBAR*/
 
@@ -558,8 +573,8 @@
   margin: 20px;
   color: var(--white);
   background-color: var(--blue);
-  width: 130px;
-  height: 40px;
+  width: 160px;
+  height: 44px;
   border: 2px solid var(--white);
   font-weight: 570;
 }
@@ -614,6 +629,7 @@ padding: 3px;
   padding: 5px;
   padding-top: 10px;
   font-weight: 550;
+  
  
 }
 .resources{
@@ -658,6 +674,9 @@ padding: 3px;
   width: 100px;
   height: 40px;
   transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .resc-expl:hover {
   cursor: pointer; /* Change cursor on hover to indicate interactivity */

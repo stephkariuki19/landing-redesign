@@ -36,6 +36,7 @@
                     <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">Data Repository</a>
                     <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Indicator Dashboards</a>
                     <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">Operational Dashboards</a>
+                    <a href="#">Defaulter Tracker</a>
                   </div>
                 </div>
                 <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=3689">FAQs</a>
@@ -101,7 +102,7 @@
              <div class="data-repo">
                 <h5>Data Repository</h5>
                 <p>
-                                    Gain crucial information regarding vaccination coverage, schedules, distribution, and epidemiological data, all  through a centralized hub.
+                                Gain  information regarding vaccination coverage, schedules, distribution, and epidemiological data, in a centralized hub.
 
                 </p>
                 <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">
@@ -125,6 +126,16 @@
     
                 </p>
                 <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">
+                  <button class="resc-expl">EXPLORE</button>
+                </a>
+              </div>
+
+                  <div class="default-tracker">
+                <h5>Defaulter Tracking</h5>
+                <p>
+                  A web app for simplifying modern data entry useful in monitoring   maternal vaccine uptake to ensure child immunization completion.
+                </p>
+                <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">
                   <button class="resc-expl">EXPLORE</button>
                 </a>
               </div>

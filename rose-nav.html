@@ -6,52 +6,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Lexend:wght@100;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-<title>NAV</title>
+<title>new-word</title>
 </head>
 <body>
-    <div class="main-container">
-          <div class="row">
-            <div class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
-            </div>
-            <nav class="navbar">
-
-              <div class="logo">
-                <a href="https://kenvip-home.jkuat.ac.ke">
-                  <img class="logo-img" src="https://kenvip-home.jkuat.ac.ke/wp-content/uploads/2023/08/MOH-logo_-002-5_page-0001-1-scaled.jpg" alt="kenvip logo">
-              </a> 
-              </div>
-              <div class="main-menu">
-                <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/">Home</a>
-                <a class="ham-link" href="#">About Us</a>
-                <div class="dropdown">
-                  <a  class="ham-link"class="dropbtn" href="#">Services
-                    <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <title>chevron-down</title>
-                      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                    </svg>
-                  </a>
-                  <div class="dropdown-content">
-                    <a href="http://kenvipsmartlearning.jkuat.ac.ke/">Smart Learning</a>
-                    <a href="https://kenvip-home.jkuat.ac.ke/?page_id=223">Data Repository</a>
-                    <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Indicator Dashboards</a>
-                    <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">Operational Dashboards</a>
-                  </div>
-                </div>
-                <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=3689">FAQs</a>
-                <a class="ham-link" href="#">Contact Us</a>
-              </div>
-            </nav>
-         
+      <div class="row">
+        <div class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
         </div>
-     
-    <main>
- 
+        <nav class="navbar">
 
-                           
-    </main>
-   
-</div>
+          <div class="logo">
+            <a href="https://kenvip-home.jkuat.ac.ke">
+              <img class="logo-img" src="https://kenvip-home.jkuat.ac.ke/wp-content/uploads/2023/08/MOH-logo_-002-5_page-0001-1-scaled.jpg" alt="kenvip logo">
+          </a> 
+          </div>
+          <div class="main-menu">
+            <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/">Home</a>
+            <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=4541">About Us</a>
+            <div class="dropdown">
+              <a  class="ham-link"class="dropbtn" href="#">KeNVIP Services
+                <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>chevron-down</title>
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+              <div class="dropdown-content">
+                <a href="http://kenvipsmartlearning.jkuat.ac.ke/">Smart Learning</a>
+                <a href="http://41.204.187.229/home">Data Repository</a>
+                <a href="https://kenvip-home.jkuat.ac.ke/?page_id=22">Indicator Dashboards</a>
+                <a href="https://kenvip-home.jkuat.ac.ke/?page_id=3881">Operational Dashboards</a>
+                <a href="https://kenvip-home.jkuat.ac.ke:8881/">Defaulter Tracker App</a>
+              </div>
+            </div>
+            <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=3689">FAQs</a>
+            <a class="ham-link" href="https://kenvip-home.jkuat.ac.ke/?page_id=451">Contact Us</a>
+          </div>
+        </nav>
+     
+    </div>
+ 
 <style>
   
   :root {
@@ -66,7 +59,15 @@
   margin: 0px;
   font-family: 'Lexend', sans-serif;
 }
- 
+ /* Apply a CSS reset */
+html, body, div, span,section, h1, h2,h4,h5, h3, p, a, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 /*NEW NAVBAR*/
 
 .row {
@@ -143,7 +144,7 @@
 }
   /*NAVBAR FOR MOBILEE*/
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 868px) {
     .main-menu {
       position: relative;
       top: 318px;
@@ -344,6 +345,22 @@
   font-weight: 400;
   text-align: center;
 }
+/*SLIDER*/
+
+.slideshow {
+  position: relative;
+  max-width: 1000px;
+  max-height: 670px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.slide {
+  display: none;
+}
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
 .buttons {
   position: absolute;
   top: 50%;
@@ -358,16 +375,273 @@
   height: 40px;
   
 }
+.progress-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+.progress-nav span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.progress-nav span.active {
+  background-color: #333;
+  cursor: auto;
+}
 
+/*ABOUT US*/
+.learn-more{
+  margin: 20px;
+  color: var(--white);
+  background-color: var(--blue);
+  width: 160px;
+  height: 44px;
+  border: 2px solid var(--white);
+  font-weight: 570;
+}
+.learn-more:hover{
+  color: var(--blue);
+  background-color: var(--white);
+}
+.about-us{
+ background-color: var(--blue);
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ min-height: 380px;
+ color: var(--white);
+ text-align: center;
+ width: 100vw;
+}
+.about-text{
+  padding: 50px;
+  margin-bottom: 10px;
+  min-height: 420px;
+  line-height: 25px;
+  font-size: 22px;
+}
+.about-text h3{
+  font-size: 30px;
+  margin: 10px;
+}
+.about-text p{
+  font-weight: 370;
+}
+.about-us div{
+  max-height: 300px;
+}
+.about-image{
+padding: 3px;
+}
+.about-image img{
+  max-width:600px;
+  max-height: 700px;
 
+}
 
+/*RESOURCE SECTION*/
+.resource-container{
+  background-color:var(--grey);
+  padding: 20px;
+}
+.resource-container h4{
+  color: var(--blue);
+  font-size: 22px;
+  text-align: center;
+  padding: 5px;
+  padding-top: 10px;
+  font-weight: 550;
+  
+ 
+}
+.resources{
+  display: flex;
+  padding: 10px;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.resources div{
+  max-width: 400px;
+  max-height: 400px;
+  margin: 10px;
+  background-color:var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resources div h5{
+  text-align: center;
+  margin-bottom: 2px;
+}
+.resources div p{
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.resc-expl{
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resc-expl:hover {
+  cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  filter: saturate(0.8); /* Reduce saturation */
+}
+/*PARTNERS SECTION*/
+.partners-section{
+  padding: 20px;
+}
+.partners-section h5{
+  color:var(--blue);
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+  font-weight: 550;
+}
+.partners-logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.partners-logos img{
+background-color: transparent;
+}
+.chai-img{
+  width:120px;
+  height:66px;
+}
+.unicef-img{
+  width:120px;
+  height:90px;
+}
+.moh-img{
+  width:300px;
+  height:66px;
+}
+.nexleaf-img{
+  width:120px;
+  height:54px;
+}
+.jkuat-img{
+  width:110px;
+  height:119px;
+}
+/*FOOTER STYLE*/
+.flex-footer{
+  display: grid;
+  margin-left: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:10px;
+  padding: 10px;
+}
+.flex-footer div{
+  border-left: 1px solid white;
+  padding: 5px;
+}
+footer{
+  background-color:var(--blue);
+  padding: 10px;
+}
+footer a{
+  text-decoration: none;
+  font-size: 12px;
+  color:var(--white);
+  font-weight: 400;
+}
+footer a:hover{
+color: #bbb;
+}
+.copy{
+  font-weight: 400;
+}
+.nav-links,.resource-links{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  line-height: 24px;
+  font-weight: bolder;
+}
+.socials{
+  min-width: 390px;
+  display: grid;
+  grid-template-columns: 0.80fr 0.80fr 0.80fr 0.80fr 0.80fr 0.80fr;
+  padding: 20px;
+  color:var(--white);
+  font-weight: 8px;
+  font-weight: 250;
+}
+
+ footer svg{
+  height:26px;
+  width:26px;
+  fill: #fff;
+  
+}
+footer h6{
+  color:var(--white);
+  font-weight: 300;
+  text-align: center;
+  margin: 20px;
+}
 .main-container{
   width:100vw;
   overflow: hidden;
 }
 
+.back-top:hover{
+  cursor: pointer;
+  filter: saturate(0.6);
+  background-color: var(--white);
+  color: var(--blue);
+  
+}
+
 svg{
   cursor: pointer;
+}
+/*THE TWEETS PAGE*/
+.scrollable-div {
+  width:60vw; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  overflow: auto; /* Enable scrolling */
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.parent-scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey);
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.parent-scroll h5{
+  color: var(--blue);
+  font-size: 20px;
 }
 /*MEDIA QUERIES*/
 @media (max-width: 380px) {
@@ -401,26 +675,81 @@ height: 99px;
   color: var(--white);
 }
 
+.about-us {
+display: flex;
+flex-direction: column;
+font-size: 20px;
+line-height: 2.5;
 }
-@media (max-width: 840px) {
-  .dropdown-content a:hover {
-  border-bottom: 1px solid white;
 
-  color: var(--white);
+.about-text {
+padding: 40px;
+margin-bottom: 10px;
+}
+.about-image {
+  position: relative;
+  bottom: 20px;
+}
+.about-image img {
+max-width: 100%;
+max-height: 100%;
+}
+.resources{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.partners-logos{
+flex-direction: column;
 }
 .partners-logos img{
-  width: 100%;
-  margin-right: 5px;
+width: 100%;
+}
+.flex-footer {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.top h4:hover {
+  border-bottom: 1px solid white;
+  filter: saturate(0.8);
+cursor: pointer;
+}
+.socials {
+  min-width: auto;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ position: relative;
+ left: 20px;
+}
+
+.socials svg {
+  margin: 5px;
+}
+
+footer {
   padding: 5px;
 }
-.about-us{
-  min-height:560px ;
+
+.socials div {
+  margin-top: 2px;
+}
+.resource-links{
+  position: relative;
+  right: 30px;
+}
+footer h6 {
+  font-size: 12px;
+  margin: 10px;
 }
 }
+
 
 @media (min-width: 760px) and (max-width: 1023px) {
   .main-menu{
-    border: 1px solid orange ;
     transform: translateX(-1250px);
 
   }
@@ -429,7 +758,6 @@ height: 99px;
 }
 .dropdown-content a:hover {
   border-bottom: 1px solid white;
-
   color: var(--white);
 }
 header {
@@ -437,14 +765,38 @@ header {
   font-size: 14px;
 }
 
-
 .logo {
   margin: 4px;
   margin-left: 20px;
-  width: 40px;
-  height: 44px;
+  width: 90px;
+  height: 99px;
 }
-
+.logo-img{
+  width: 90px;
+  height: 99px;
+}
+.about-us{
+  min-height:500px ;
+}
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+.resources{
+  flex-direction: column;
+}
+.about-text{
+  min-height: 750px;
+}
+.menu-btn{
+  top: 40px;
+  width: 70px;
+  width: 70px;
+}
+.menu-btn svg{
+  width: 70px;
+  width: 70px;
+}
 }
 
 </style>
@@ -463,6 +815,47 @@ chevronDown.addEventListener('click', () => {
 dropdownContent.classList.toggle('show');
 });
 
+//STYLING FOR SLIDER
+const spans = document.querySelector('.progress-span')
+let currentSlide = 0;
+const slides = document.getElementsByClassName("slide");
+const progressNav = document.getElementsByClassName("progress-nav")[0].getElementsByTagName("span");
+
+//to show actual pictures in slideshow
+//new
+// Function to show a specific slide
+function showSlide(n) {
+for (let i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  progressNav[i].classList.remove("active");
+}
+
+if (n < 0) {
+  currentSlide = slides.length - 1;
+} else if (n >= slides.length) {
+  currentSlide = 0;
+} else {
+  currentSlide = n;
+}
+
+slides[currentSlide].style.display = "block";
+progressNav[currentSlide].classList.add("active");
+}
+
+// Function to change the slide
+function changeSlide(n) {
+showSlide(currentSlide + n);
+}
+
+// Show the initial slide
+showSlide(currentSlide);
+
+// Set interval to automatically change slides every 8000 milliseconds (8 seconds)
+setInterval(function () {
+changeSlide(1);
+}, 5500);
+
+
 
 //STYLING FOR NAVIGATION
 // Add an event listener to the "Back to the top" link
@@ -471,7 +864,35 @@ document.querySelector('.back-top').addEventListener('click', () => {
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+//NEWS 
+fetch('https://www.africa-newsroom.com/africarc/rss/Tzo4OiJzdGRDbGFzcyI6Mzp7czo5OiJsYW5ndWFnZXMiO3M6MTk6ImE6MTp7aTowO3M6MjoiZW4iO30iO3M6NDoidGFncyI7YToxOntpOjA7YToyOntzOjY6InRhZ19pZCI7czozOiIxMzMiO3M6NToidGFnX2MiO3M6MzoiNjAxIjt9fXM6NDoidHlwZSI7czoxOiJyIjt9')
+  .then(response => response.text())
+  .then(data => {
+      // Parse the XML data
+      console.log('rss data')
+      console.log(data)
+  })
+  .catch(error => {
+      console.error('Error fetching RSS feed:', error);
+  });
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(data, 'text/xml');
+  const items = xmlDoc.querySelectorAll('item'); // Get all the <item> elements
+  const container = document.getElementById('rss-container'); // Assuming you have a container element
+items.forEach(item => {
+  const title = item.querySelector('title').textContent;
+  const link = item.querySelector('link').textContent;
+  const description = item.querySelector('description').textContent;
+  const pubDate = item.querySelector('pubDate').textContent;
 
+  const article = document.createElement('article');
+  article.innerHTML = `
+      <h2><a href="${link}" target="_blank">${title}</a></h2>
+      <p>${description}</p>
+      <p>${pubDate}</p>
+  `;
+  container.appendChild(article);
+});
 
 </script>
 </html>
